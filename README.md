@@ -53,10 +53,5 @@ python run_pipeline.py
 7. **Validation honnête (Leave-One-Out)** : on cache un produit réellement acheté par chaque vendeur testable et on vérifie si le modèle le retrouve dans ses recommandations, en comparant à une baseline simple (recommander les produits les plus populaires, sans clustering).
 8. **Export des résultats** dans des fichiers CSV.
 
-## Limites connues
 
-La qualité des recommandations dépend fortement de la richesse des données disponibles. Le clustering actuel se base uniquement sur des indicateurs de volume/comportement d'achat ; l'ajout de variables comme la localisation, le canal de vente ou l'historique multi-périodes améliorerait probablement la personnalisation.
 
-## Remarque sur les données
-
-Ce dépôt ne contient pas de données réelles ni de résultats dérivés de données réelles (voir `.gitignore`). Pour exécuter le pipeline, placer un fichier de données au format attendu (voir `src/config.py` pour les noms de colonnes) dans `data/`.
